@@ -14,7 +14,7 @@ public class Principal {
 
        switch (opciones){
            case "Conversor de Moneda":{
-               String input = JOptionPane.showInputDialog("Ingrese un valor en Pesos a convertir");
+               String input = JOptionPane.showInputDialog("Ingrese un valor a convertir");
 
                double valorRecibido = Double.parseDouble(input);
                monedas.ConvertirMonedas(valorRecibido);
@@ -22,7 +22,7 @@ public class Principal {
                int seleccion = JOptionPane.showConfirmDialog(null, "Deseas realizar otra conversion?");
                if (JOptionPane.OK_OPTION == seleccion){
 
-                   String nuevoValor = JOptionPane.showInputDialog("Ingrese un nuevo valor en Pesos a convertir");
+                   String nuevoValor = JOptionPane.showInputDialog("Ingrese un nuevo valor a convertir");
 
                    double nuevoValorRecibido = Double.parseDouble(nuevoValor);
                    monedas.ConvertirMonedas(nuevoValorRecibido);
